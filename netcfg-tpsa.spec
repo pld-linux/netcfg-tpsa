@@ -4,7 +4,7 @@ Name:		netcfg-tpsa
 Version:	1.0
 Release:	0.1
 License:	GPL
-Group:		-
+Group:		Applications/System
 Source0:	http://ep09.pld-linux.org/~havner/livecd-%{version}.tar.bz2
 # Source0-md5:	f0bc5023d278c3c39dcdbca9e9539c78
 Requires:	perl-Paw
@@ -14,17 +14,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 TPSA connections configurator.
 
 %description -l pl
-Konfigurator po³±czeñ TPSA
+Konfigurator po³±czeñ TPSA.
 
 %prep
 %setup -q -n livecd
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
 install -d $RPM_BUILD_ROOT%{_sbindir}
+
 install tpsa/netcfg-tpsa.pl $RPM_BUILD_ROOT%{_sbindir}
 
 %clean

@@ -21,9 +21,10 @@ Konfigurator po³±czeñ TPSA.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_sbindir}
+install -d $RPM_BUILD_ROOT{%{_sbindir},%{_desktopdir}}
 
 install netcfg-tpsa.pl $RPM_BUILD_ROOT%{_sbindir}
+install netcfg-tpsa.desktop $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -31,3 +32,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_sbindir}/*
+%{_desktopdir}/*

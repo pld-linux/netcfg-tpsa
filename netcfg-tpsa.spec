@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/System
 Source0:	http://ep09.pld-linux.org/~havner/tpsa-%{version}.tar.bz2
 # Source0-md5:	37ef5e8d37371e82a82629da4958a31d
+Source1:	%{name}.desktop
 Requires:	perl-Paw
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,7 +25,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_sbindir},%{_desktopdir}}
 
 install netcfg-tpsa.pl $RPM_BUILD_ROOT%{_sbindir}
-install netcfg-tpsa.desktop $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -32,4 +33,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_sbindir}/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop

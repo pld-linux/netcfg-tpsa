@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=netcfg-tpsa
+Type=Application
+Comment=TPSA connections configurator
+Exec=netcfg-tpsa.pl
+Terminal=true
+Categories=Settings

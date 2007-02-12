@@ -1,5 +1,5 @@
 Summary:	TPSA connections configurator
-Summary(pl):	Konfigurator po³±czeñ TPSA
+Summary(pl.UTF-8):   Konfigurator poÅ‚Ä…czeÅ„ TPSA
 Name:		netcfg-tpsa
 Version:	0.99
 Release:	1
@@ -14,8 +14,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 TPSA connections configurator.
 
-%description -l pl
-Konfigurator po³±czeñ TPSA.
+%description -l pl.UTF-8
+Konfigurator poÅ‚Ä…czeÅ„ TPSA.
 
 %prep
 %setup -q -n tpsa

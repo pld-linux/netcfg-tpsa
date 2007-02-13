@@ -1,5 +1,5 @@
 Summary:	TPSA connections configurator
-Summary(pl.UTF-8):   Konfigurator połączeń TPSA
+Summary(pl.UTF-8):	Konfigurator połączeń TPSA
 Name:		netcfg-tpsa
 Version:	0.99
 Release:	1
